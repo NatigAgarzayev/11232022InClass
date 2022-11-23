@@ -1,0 +1,24 @@
+.company {
+    background-color: #FAFAFA;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 940px) {
+            justify-content: center;
+            gap: 60px;
+        }
+    }
+
+    &__image {
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

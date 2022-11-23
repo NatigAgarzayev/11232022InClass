@@ -1,0 +1,49 @@
+.request {
+    padding: 40px 0;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media(max-width: 375px){
+            display: block;
+        }
+    }
+
+    &__textbox {
+    }
+
+    &__title {
+        color: $text;
+        font-family: 'Martel';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $text-second;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    &__link {
+        padding: 15px 40px;
+        background-color: $brown;
+        border-radius: 5px;
+        white-space: nowrap;
+        max-width: fit-content;
+        cursor: pointer;
+        @media(max-width: 375px){
+            margin-top: 50px;
+        }
+        a{color: white;}
+    }
+}

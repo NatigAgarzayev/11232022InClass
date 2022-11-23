@@ -1,0 +1,114 @@
+.who {
+    padding: 100px 0 143px 0;
+
+    &__body {
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__subhead {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__content {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+
+    &__play {
+        width: 597px;
+        position: relative;
+        @media (max-width: 992px) {
+            width: 550px;
+            img{
+                width: 550px;
+            }
+        }  
+        @media (max-width: 580px) {
+            width: 333px;
+            img{
+                width: 333px;
+            }
+        }  
+        @media (max-width: 375px) {
+            width: 280px;
+            img{
+                width: 280px;
+            }
+        }  
+    }
+
+    &__play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 992px) {
+            width: 98px;
+            img{
+                width: 98px;
+            }
+        }  
+    }
+
+    &__textbox {
+        max-width: 333px;
+        
+    }
+
+    &__content-title {
+        margin-bottom: 10px;
+    }
+
+    &__content-text {
+    }
+
+    &__list {
+        margin-top: 50px;
+    }
+
+    &__list-item {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__list-icon {
+    }
+
+    &__list-textbox {
+    }
+
+    &__list-text {
+        margin-bottom: 5px;
+        font-family: 'Martel', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: $text;
+    }
+
+    &__list-description {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $text-second;
+    }
+}
